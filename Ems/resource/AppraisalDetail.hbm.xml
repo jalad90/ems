@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 20, 2013 4:13:47 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+	<class name="com.ems.dto.AppraisalDetailDTO" table="appraisal_details">
+		<id name="appraisal_id" type="integer">
+			<column name="user_appraisal_id" />
+			<generator class="native" />
+		</id>
+		<property name="firstName" column="firstname_nn" type="string"></property>
+		<property name="division" type="java.lang.String">
+			<column name="division_nn" />
+		</property>
+		<property name="department" type="java.lang.String">
+			<column name="department_nn" />
+		</property>
+		<property name="lastAppraisalDate" type="java.util.Date">
+			<column name="last_appraisal_date_nn" />
+		</property>
+		<property name="futureAppraisalDate" type="java.util.Date">
+			<column name="future_appraisal_date_nn" />
+		</property>
+	</class>
+</hibernate-mapping>

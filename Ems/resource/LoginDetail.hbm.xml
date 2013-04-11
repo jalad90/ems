@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 18, 2013 1:59:53 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+	<class name="com.ems.dto.LoginDetailDTO" table="login_detail">
+		<id name="id" type="int">
+			<column name="id_pk" />
+			<generator class="native" />
+		</id>
+		<property name="userName" column="username_nn" type="string"></property>
+		<property name="passWord" column="password_nn" type="string"></property>
+		<property name="userType" column="userType_nn" type="string"></property>
+	</class>
+</hibernate-mapping>

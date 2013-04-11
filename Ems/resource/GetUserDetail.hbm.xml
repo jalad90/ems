@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 18, 2013 6:42:16 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping package="com.ems.dto">
+    <class name="UpdateUserDetailDto" table="register_user" >
+       <id name="id" type="integer">
+			<column name="user_reg_id"></column>
+			<generator class="native"></generator>
+		</id>
+		<property name="firstName" column="first_name_nn" type="string"></property>
+		<property name="lastName" column="last_name_nn" type="string"></property>
+		<property name="emailId" column="email_id_nn" type="string"></property>
+		<property name="dateOfBirth" column="date_of_birth_nnn" type="date"></property>
+		<property name="gender" column="gender" type="string"></property>
+		<property name="uidNumber" column="uid_number_nn" type="long"></property>
+		<property name="panNumber" column="pan_number_nn" type="long"></property>
+		<property name="address" column="address" type="string"></property>
+		<property name="department" column="department_nn" type="string"></property>
+		<property name="division" column="designation_nn" type="string"></property>
+		<property name="userRegisterType" column="user_type_nn" type="string"></property>
+		<property name="mobileNumber" column="mobile_number_nn" type="string"></property> 
+		
+    </class>
+</hibernate-mapping>
