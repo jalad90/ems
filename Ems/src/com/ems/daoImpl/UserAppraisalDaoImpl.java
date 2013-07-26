@@ -36,10 +36,5 @@ public class UserAppraisalDaoImpl implements UserAppraisal {
 
 	}
 
-	@Override
-	public boolean isUpdated(int getResult) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
+	
 }
